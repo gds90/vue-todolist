@@ -11,7 +11,7 @@ createApp({
                 },
                 {
                     text: 'Annullare abbonamento Premium di Spotify',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Pulire acquario',
@@ -19,7 +19,7 @@ createApp({
                 },
                 {
                     text: 'Chiamare Consuelo',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Portare fuori il cane',

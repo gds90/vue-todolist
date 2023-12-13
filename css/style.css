@@ -7,6 +7,7 @@
 main {
     background-color: rgba(47, 153, 47, 0.533);
     height: 100vh;
+    font-family: verdana,sans-serif;
 }
 
 h1 {
@@ -16,7 +17,6 @@ h1 {
 
 .todolist-container{
     background-color: #fff;
-    max-width: 800px;
     border: 2px solid lightgrey;
     border-radius: 10px;
     overflow-y: auto;
@@ -25,6 +25,6 @@ h1 {
 li {
     padding: 20px 10px;
     border-bottom: 1px solid gray;
-    
+    color: rgb(113, 113, 113);
 }
 

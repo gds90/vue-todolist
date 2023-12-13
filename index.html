@@ -18,7 +18,8 @@
                         <div class="todolist-container">
                             <ul class="list-unstyled">
                                 <li v-for="(todo, index) in todo_list" :key="index" class="d-flex justify-content-between">
-                                    <div class="todo_content" :class="todo.done ? 'text-decoration-line-through' : ''" @click="todo_list[index].done = !todo_list[index].done">
+                                    <div class="todo_content" :class="todo.done ? 'text-decoration-line-through' : ''"
+                                    @click="todo_list[index].done = !todo_list[index].done"> <!-- BONUS 2 click su item per cambiare la proprietà done da true a false e viceversa -->
                                         <span>{{todo.text}}</span>
                                     </div>
                                     <button class="mx-1 btn btn-sm btn-danger" @click="removeTodo(index)"><i class="fas fa-x"></i></button>
@@ -28,12 +29,12 @@
                         <div class="addtask-container">
                             <div class="container my-4">
                                 <div class="row">
-                                    <div class="col-9">
+                                    <div class="col-10">
                                         <input type="text" class="form-control form-control-sm" placeholder="Inserisci una nuovo promemoria" v-model="text_todo" @keyup.enter="addTodo"> 
                                         <!-- @keyup.enter BONUS 1 -->
                                     </div>
-                                    <div class="col-3">
-                                        <button class="btn btn-sm btn-success ms-5" @click="addTodo">Aggiungi</button>
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <button class="btn btn-sm btn-success" @click="addTodo">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
