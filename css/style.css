@@ -5,7 +5,7 @@
 }
 
 main {
-    background-color: rgba(47, 153, 47, 0.533);
+    background-image: url(../img/background.jpg);
     height: 100vh;
     font-family: verdana,sans-serif;
 }
@@ -16,15 +16,23 @@ h1 {
 }
 
 .todolist-container{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.479);
     border: 2px solid lightgrey;
     border-radius: 10px;
     overflow-y: auto;
+    max-width: 700px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+.addtask-container{
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 li {
     padding: 20px 10px;
     border-bottom: 1px solid gray;
     color: rgb(113, 113, 113);
+
 }
 
