@@ -17,8 +17,8 @@
                         <h1 class="text-center my-3">Vue To Do List</h1>
                         <div class="todolist-container">
                             <ul class="list-unstyled">
-                                <li v-for="(todo, index) in todo_list" :key="index" :class>
-                                    <div class="todo_content">
+                                <li v-for="(todo, index) in todo_list" :key="index">
+                                    <div class="todo_content" :class="todo.done ? 'text-decoration-line-through' : ''" @click="todo_list[index].done = !todo_list[index].done">
                                         <span>{{todo.text}}</span>
                                     </div>
                                 </li>
