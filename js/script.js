@@ -28,7 +28,10 @@ createApp({
         }
     },
     methods: {
-        
+        //  FUNZIONE PER RIMUOVERE UN TASK
+        removeTodo(index){
+            this.todo_list.splice(index,1)
+        },
     }
 }).mount('#app');
 
